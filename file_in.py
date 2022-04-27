@@ -32,7 +32,3 @@ if file_path is not None:
         time.sleep(10)
         # закрываем браузер после всех манипуляций
         browser.quit()
-
-    # element.send_keys(file_path)
-    # print(os.path.abspath(__file__))  # Получаем путь вместе с именем файла
-    # print(os.path.abspath(os.path.dirname(__file__)))  # Получаем путь без имени файла и слэша
