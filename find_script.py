@@ -10,10 +10,6 @@ def calc(x):
 
 try:
     browser = webdriver.Chrome()
-    #   browser.execute_script('document.title="Script executing";')
-    # browser.execute_script("alert('Robots at work');")
-    # browser.execute_script("document.title='Script executing';alert('Robots at work');")
-
     link = "http://suninjuly.github.io/execute_script.html"
     browser.get(link)
     x = browser.find_element(By.CSS_SELECTOR, '#input_value').text
