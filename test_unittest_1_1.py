@@ -13,7 +13,8 @@ class TestAbs(unittest.TestCase):
 
             # Ваш код, который заполняет обязательные поля
             es = browser.find_element(By.CSS_SELECTOR, 'div.first_block')
-            elements = es.find_elements_by_tag_name('input')
+            # elements = es.find_elements_by_tag_name('input')
+            elements = es.find_elements(By.TAG_NAME, 'input')
             for element in elements:
                 element.send_keys("z")
 
@@ -62,7 +63,7 @@ class TestAbs(unittest.TestCase):
             time.sleep(1)
 
             # находим элемент, содержащий текст
-            welcome_text_elt = browser.find_element(By.TAG_NAME,"h1")
+            welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
             # записываем в переменную welcome_text текст из элемента welcome_text_elt
             welcome_text = welcome_text_elt.text
 
